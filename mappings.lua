@@ -26,7 +26,7 @@ return {
     -- duplicate current line
     ["<c-d>"] = { "Vyp", desc = "Duplicate current line" },
     -- show BufExplorer
-    ["<leader>z"] = { ":BufExplorerVerticalSplit<cr>", desc = "Show BufExplorer" }
+    ["<leader>z"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" }
   },
   i = {
     -- duplicate current line
