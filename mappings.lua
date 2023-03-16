@@ -20,6 +20,17 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- switch alternate buffers
+    ["<leader><leader>"] = {"<c-^>", desc = "Switch alternate buffers"},
+    -- duplicate current line
+    ["<c-d>"] = { "Vyp", desc = "Duplicate current line" },
+    -- show BufExplorer
+    ["<leader>z"] = { ":BufExplorerVerticalSplit<cr>", desc = "Show BufExplorer" }
+  },
+  i = {
+    -- duplicate current line
+    ["<c-d>"] = { "Vyp", desc = "Duplicate current line" },
   },
   t = {
     -- setting a mapping to false will disable it
